@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        background-color: #eee; 
+    }
+
+    #message {
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: blueviolet;
+        padding: 4px;
+        margin: 200px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #extra {
+        font-size: 15px;
+    }
+
+    @media screen and (max-width:900px) {
+        main , #message {
+            margin: 0;
+        }
+    }
+</style>
+<body>
+
+    <main>
+        <div id="message">
+            <p>{{ code }} </p> <br>
+            <p> {{ message }}</p>
+            <br>
+            {% if extra is defined %}
+
+            <p id="extra">{{ extra }}</p>
+
+            {% endif %}
+
+        </div>
+    </main>
+
+</body>
+
+</html>

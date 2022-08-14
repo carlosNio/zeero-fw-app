@@ -1,0 +1,16 @@
+<?php
+
+use Zeero\Zcli\Zcli;
+
+require_once "vendor/autoload.php";
+require_once "App/Controllers/Console/console.php";
+
+
+/**
+ * 
+ * 
+ * Start the ZCLI
+ * 
+ * 
+ */
+Zcli::start($argc, $argv);
